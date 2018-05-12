@@ -1,0 +1,71 @@
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+@import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+html,
+body {
+  font-family: 'Indie Flower', cursive;
+  font-size: 20px;
+  background: #111;
+  margin: 0;
+  padding: 0;
+}
+
+table.uomTable {
+  color: #fff;
+  font-size: .9em;
+  line-height: 40px;
+  border-spacing: 0;
+  border: 2px solid rgba(255,200,0,.80);
+  width: 500px;
+  margin: 3rem auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,.16);
+  border-radius: 2px;
+}
+
+table.uomTable > thead {
+  color: #111;
+  font-weight: 900;
+  background-color: rgba(255,200,0,.80);
+}
+
+table.uomTable > thead > tr > td.active,
+table.uomTable > thead > tr > td:hover:not(:last-child):not(:nth-last-child(2)) {
+  background: #fff;
+}
+
+table.uomTable > thead > tr > td {
+  cursor: n-resize;
+}
+
+table.uomTable > tbody > tr:hover {
+  background-color: rgba(255,200,0,.2);
+}
+
+table.uomTable td:focus {
+  outline: 0;
+  border-bottom: 1px solid rgba(255,200,0,.80);
+}
+
+table.uomTable td {
+  padding: 0 .5rem;
+}
+
+table.uomTable .copy, table.uomTable .delete {
+  width: 2rem;
+  padding: 0;
+}
+
+table.uomTable .copy:before {
+  color: #56a09e;
+  padding: 0 0.5rem;
+  cursor: pointer;
+  content: "\f0c5";
+  font-family: FontAwesome;
+}
+
+table.uomTable .delete:before {
+  color: #d2142e;
+  cursor: pointer;
+  content: "\f1f8";
+  font-family: FontAwesome;
+}
